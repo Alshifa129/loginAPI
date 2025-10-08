@@ -1,0 +1,30 @@
+.container {
+  background: #88c295;
+  width: 360px;
+  margin: 50px auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+button {
+  background-color: #d7e4cb;
+  color: rgb(212, 147, 147);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #74ABE2;
+}

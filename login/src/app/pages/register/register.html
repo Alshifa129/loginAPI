@@ -1,0 +1,19 @@
+
+<div class="container">
+  <h2>Register</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
+    <input type="text" formControlName="name" placeholder="Name">
+    <div *ngIf="registerForm.get('name')?.touched && registerForm.get('name')?.invalid">Name is required</div>
+
+    <input type="email" formControlName="email" placeholder="Email">
+    <div *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.invalid">Valid email required</div>
+
+    <input type="password" formControlName="password" placeholder="Password">
+    <div *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.invalid">Password must be at least 6 characters</div>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <p>{{ message }}</p>
+  <a routerLink="/login">Already have an account? Login</a>
+</div>
